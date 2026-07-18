@@ -1,0 +1,304 @@
+/* ===========================
+   LETTER SECTION
+=========================== */
+
+.letter {
+  padding: 120px 8%;
+  background:  #F8FAFC;
+}
+
+.letter-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   HEADING
+=========================== */
+
+.letter-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.letter-heading span {
+  color: #0b2b58;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.letter-heading h2 {
+  margin: 18px 0;
+  font-size: 56px;
+  font-family: "Cormorant Garamond", serif;
+  color: #1F2937;
+}
+
+.letter-heading p {
+  max-width: 650px;
+  margin: auto;
+
+  font-family: "Manrope", sans-serif;
+
+  color: #5B6573;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+/* ===========================
+   ENVELOPE
+=========================== */
+
+.envelope {
+  width: 430px;
+
+  margin: auto;
+
+  padding: 60px 40px;
+
+  text-align: center;
+
+  background: white;
+
+  border: 2px solid #D8E3EE;
+
+  border-radius: 25px;
+
+  box-shadow: 0 25px 60px rgba(31, 58, 95, .10);
+
+  transition: .4s ease;
+}
+
+.envelope:hover {
+  transform: translateY(-8px);
+}
+
+.envelope-icon {
+  font-size: 75px;
+  color: #1F3A5F;
+
+  margin-bottom: 25px;
+}
+
+.envelope h3 {
+  font-size: 32px;
+
+  margin-bottom: 30px;
+
+  color: #1F2937;
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.envelope button {
+  border: none;
+  outline: none;
+
+  padding: 15px 36px;
+
+  border-radius: 50px;
+
+  background: #1F3A5F;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  transition: .3s ease;
+}
+
+.envelope button:hover {
+  background: #162B47;
+
+  transform: scale(1.05);
+}
+
+/* ===========================
+   LETTER CARD
+=========================== */
+
+.letter-card {
+  background: white;
+
+  padding: 65px;
+
+  border-radius: 25px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+
+  transition: .4s ease;
+}
+
+.letter-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 8px;
+  height: 100%;
+
+  background: #1F3A5F;
+}
+
+.greeting {
+  font-size: 34px;
+
+  margin-bottom: 30px;
+
+  color: #1F2937;
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.greeting span {
+  color: #1F3A5F;
+}
+
+.placeholder {
+  background: #F4F7FA;
+
+  padding: 18px 22px;
+
+  border-radius: 12px;
+
+  margin-bottom: 20px;
+
+  line-height: 1.9;
+
+  color: #5B6573;
+
+  font-family: "Manrope", sans-serif;
+
+  font-style: italic;
+}
+
+/* ===========================
+   SIGNATURE
+=========================== */
+
+.signature {
+  margin-top: 60px;
+
+  text-align: right;
+}
+
+.signature svg {
+  color: #1F3A5F;
+
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+.signature h3 {
+  color: #5B6573;
+
+  margin-bottom: 8px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-weight: 500;
+}
+
+.signature h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  color: #1F2937;
+
+  font-size: 34px;
+}
+
+/* ===========================
+   HOVER
+=========================== */
+
+.letter-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 35px 80px rgba(31, 58, 95, .15);
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 992px) {
+
+  .letter-heading h2 {
+    font-size: 44px;
+  }
+
+  .letter-card {
+    padding: 45px;
+  }
+
+  .envelope {
+    width: 380px;
+  }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .letter {
+    padding: 90px 6%;
+  }
+
+  .letter-heading h2 {
+    font-size: 36px;
+  }
+
+  .letter-heading p {
+    font-size: 16px;
+  }
+
+  .envelope {
+    width: 100%;
+    padding: 40px 25px;
+  }
+
+  .envelope-icon {
+    font-size: 60px;
+  }
+
+  .envelope h3 {
+    font-size: 28px;
+  }
+
+  .letter-card {
+    padding: 30px;
+  }
+
+  .greeting {
+    font-size: 28px;
+  }
+
+  .placeholder {
+    font-size: 15px;
+  }
+
+  .signature h2 {
+    font-size: 28px;
+  }
+
+}

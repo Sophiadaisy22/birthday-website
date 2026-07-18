@@ -1,0 +1,228 @@
+.about {
+  padding: 120px 8%;
+  background: #ffffff;
+}
+
+.about-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+
+  color: #133888;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+}
+
+.star-icon {
+  width: 16px;
+  height: 16px;
+
+  flex-shrink: 0;
+
+  object-fit: contain;
+}
+.section-title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #475569;
+}
+
+/* ===========================
+   VIDEO
+=========================== */
+
+.video-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.about-video {
+  width: 40%;
+  height: 700px;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 30px;
+
+  border: 5px solid #ffffff;
+
+  box-shadow: 0 25px 70px rgba(37, 99, 235, 0.18);
+
+  transition: 0.4s ease;
+}
+
+.about-video:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 80px rgba(37, 99, 235, 0.28);
+}
+
+/* ===========================
+   QUALITY CARDS
+=========================== */
+
+.qualities {
+  margin-top: 90px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.quality-card {
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  border: 1px solid rgba(37, 99, 235, 0.08);
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+
+  transition: 0.35s ease;
+}
+
+.quality-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.18);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6,
+    #60a5fa
+  );
+}
+
+.quality-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.quality-card p {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 992px) {
+  .section-title h2 {
+    font-size: 42px;
+  }
+
+  .about-video {
+    width: 60%;
+    height: 700px;
+  }
+
+  .qualities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 90px 6%;
+  }
+
+  .section-title h2 {
+    font-size: 34px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+  }
+
+  .about-video {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+  }
+
+  .qualities {
+    grid-template-columns: 1fr;
+  }
+
+  .quality-card {
+    padding: 30px;
+  }
+
+  .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+  }
+
+  .quality-card h3 {
+    font-size: 22px;
+  }
+}
