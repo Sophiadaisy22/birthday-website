@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroImage from "../../assets/images/hero.JPG";
+import heroImage from "../../assets/images/hero.jpg";
 
 import { motion } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
