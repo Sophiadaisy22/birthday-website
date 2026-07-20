@@ -4,9 +4,7 @@
 
 .final-surprise {
   min-height: 100vh;
-
   padding: 100px 8% 80px;
-
   background: #08121f;
 
   display: flex;
@@ -14,7 +12,6 @@
   align-items: flex-start;
 
   position: relative;
-
   overflow: hidden;
 }
 
@@ -24,7 +21,6 @@
 
 .final-surprise::before {
   content: "";
-
   position: absolute;
 
   width: 600px;
@@ -42,7 +38,6 @@
 
 .final-surprise::after {
   content: "";
-
   position: absolute;
 
   width: 450px;
@@ -53,7 +48,7 @@
 
   border-radius: 50%;
 
-  background: rgba(255,255,255,.04);
+  background: rgba(255, 255, 255, 0.04);
 
   filter: blur(100px);
 }
@@ -63,32 +58,26 @@
 =========================== */
 
 .gift-container {
-
   position: relative;
-
   z-index: 2;
 
+  width: 100%;
   max-width: 700px;
 
-  width: 100%;
-
   text-align: center;
-
   color: white;
 }
 
 .subtitle {
-
   display: block;
 
   margin-bottom: 10px;
 
-  color: #9CB8D8;
+  color: #9cb8d8;
 
   font-family: "Manrope", sans-serif;
 
   font-size: 14px;
-
   font-weight: 600;
 
   letter-spacing: 4px;
@@ -97,7 +86,6 @@
 }
 
 .gift-container h2 {
-
   font-family: "Cormorant Garamond", serif;
 
   font-size: 56px;
@@ -108,16 +96,15 @@
 }
 
 .gift-container p {
-
   font-family: "Manrope", sans-serif;
 
-  color: #D8DEE9;
+  color: #d8dee9;
 
   font-size: 17px;
 
   line-height: 1.9;
 
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 /* ===========================
@@ -125,10 +112,7 @@
 =========================== */
 
 .gift-image {
-
   width: 120px;
-
-  height: auto;
 
   display: block;
 
@@ -136,38 +120,31 @@
 
   cursor: pointer;
 
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
-  filter: drop-shadow(0 18px 35px rgba(0,0,0,.25));
+  filter: drop-shadow(0 18px 35px rgba(0, 0, 0, 0.25));
 }
 
 .gift-image:hover {
-
   transform: scale(1.08);
 }
 
 .gift-image.opened {
-
-  animation: giftPop .8s ease;
+  animation: giftPop 0.8s ease;
 }
 
 @keyframes giftPop {
-
   0% {
-
-    transform: scale(.8);
+    transform: scale(0.8);
   }
 
   60% {
-
     transform: scale(1.12);
   }
 
   100% {
-
     transform: scale(1);
   }
-
 }
 
 /* ===========================
@@ -175,14 +152,13 @@
 =========================== */
 
 .open-btn {
-
   border: none;
 
   padding: 16px 38px;
 
   border-radius: 50px;
 
-  background: #1F3A5F;
+  background: #1f3a5f;
 
   color: white;
 
@@ -194,14 +170,13 @@
 
   cursor: pointer;
 
-  transition: .35s ease;
+  transition: 0.35s ease;
 
-  box-shadow: 0 12px 30px rgba(31,58,95,.35);
+  box-shadow: 0 12px 30px rgba(31, 58, 95, 0.35);
 }
 
 .open-btn:hover {
-
-  background: #274C77;
+  background: #274c77;
 
   transform: translateY(-4px);
 }
@@ -210,136 +185,131 @@
    HAPPY BIRTHDAY
 =========================== */
 
-.birthday-title{
-
-  margin-top:40px;
+.birthday-title {
+  margin-top: 40px;
 }
 
-.birthday-title h1{
+.birthday-title h1 {
+  font-family: "Cormorant Garamond", serif;
 
-  font-family:"Cormorant Garamond", serif;
+  font-size: 70px;
 
-  font-size:70px;
+  color: white;
 
-  color:white;
+  line-height: 1.1;
 
-  line-height:1.1;
-
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 /* ===========================
    SURPRISE CONTENT
 =========================== */
 
-.surprise-content{
+.surprise-content {
+  position: relative;
 
-  position:relative;
+  z-index: 2;
 
-  z-index:2;
+  width: 100%;
 
-  width:100%;
+  text-align: center;
 
-  text-align:center;
-
-  color:white;
+  color: white;
 }
 
 /* ===========================
    VIDEO
 =========================== */
 
-.surprise-video{
+.surprise-video {
+  width: 65%;
 
-  width:90%;
+  max-width: 650px;
 
-  max-width:900px;
+  display: block;
 
-  margin:50px auto;
+  margin: 45px auto;
 
-  display:block;
+  border-radius: 20px;
 
-  border-radius:20px;
+  border: 3px solid rgba(255, 255, 255, 0.08);
 
-  border:3px solid rgba(255,255,255,.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 
-  box-shadow:0 25px 70px rgba(0,0,0,.35);
+  transition: all 0.4s ease;
+}
+
+.surprise-video:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
 
 /* ===========================
    END MESSAGE
 =========================== */
 
-.ending-message{
+.ending-message {
+  max-width: 600px;
 
-  max-width:700px;
-
-  margin:60px auto 0;
+  margin: 60px auto 0;
 }
 
-.ending-message h2{
+.ending-message h2 {
+  font-family: "Cormorant Garamond", serif;
 
-  font-family:"Cormorant Garamond", serif;
+  font-size: 42px;
 
-  font-size:42px;
-
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
-.ending-message p{
+.ending-message p {
+  font-family: "Manrope", sans-serif;
 
-  font-family:"Manrope", sans-serif;
+  color: #d8dee9;
 
-  color:#D8DEE9;
+  font-size: 18px;
 
-  font-size:18px;
+  line-height: 2;
 
-  line-height:2;
-
-  margin-bottom:35px;
+  margin-bottom: 35px;
 }
 
-.ending-message h3{
+.ending-message h3 {
+  font-family: "Cormorant Garamond", serif;
 
-  font-family:"Cormorant Garamond", serif;
+  font-size: 38px;
 
-  font-size:38px;
-
-  margin-bottom:18px;
+  margin-bottom: 18px;
 }
 
-.ending-message span{
+.ending-message span {
+  color: #9cb8d8;
 
-  color:#9CB8D8;
+  font-family: "Manrope", sans-serif;
 
-  font-family:"Manrope", sans-serif;
-
-  font-size:16px;
+  font-size: 16px;
 }
 
 /* ===========================
    TABLET
 =========================== */
 
-@media (max-width:992px){
+@media (max-width: 992px) {
 
-.gift-container h2{
+  .gift-container h2 {
+    font-size: 46px;
+  }
 
-font-size:46px;
+  .birthday-title h1 {
+    font-size: 54px;
+  }
 
-}
+  .surprise-video {
+    width: 80%;
 
-.birthday-title h1{
-
-font-size:54px;
-
-}
-
-.surprise-video{
-
-width:100%;
-
-}
+    max-width: 600px;
+  }
 
 }
 
@@ -347,70 +317,52 @@ width:100%;
    MOBILE
 =========================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-.final-surprise{
+  .final-surprise {
+    padding: 90px 6% 70px;
+  }
 
-padding:90px 6% 70px;
+  .gift-container h2 {
+    font-size: 36px;
+  }
 
-}
+  .gift-container p {
+    font-size: 15px;
+  }
 
-.gift-container h2{
+  .gift-image {
+    width: 90px;
+  }
 
-font-size:36px;
+  .open-btn {
+    width: 100%;
+  }
 
-}
+  .birthday-title h1 {
+    font-size: 36px;
+  }
 
-.gift-container p{
+  .surprise-video {
+    width: 100%;
 
-font-size:15px;
+    max-width: 100%;
 
-}
+    margin: 30px auto;
 
-.gift-image{
+    border-radius: 15px;
+  }
 
-width:90px;
+  .ending-message h2 {
+    font-size: 30px;
+  }
 
-}
+  .ending-message h3 {
+    font-size: 28px;
+  }
 
-.open-btn{
-
-width:100%;
-
-}
-
-.birthday-title h1{
-
-font-size:36px;
-
-}
-
-.surprise-video{
-
-width:100%;
-
-margin:35px auto;
-
-border-radius:15px;
-
-}
-
-.ending-message h2{
-
-font-size:30px;
-
-}
-
-.ending-message h3{
-
-font-size:28px;
-
-}
-
-.ending-message p{
-
-font-size:16px;
-
-}
+  .ending-message p {
+    font-size: 16px;
+  }
 
 }

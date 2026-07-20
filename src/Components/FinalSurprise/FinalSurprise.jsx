@@ -5,7 +5,7 @@ import Confetti from "react-confetti";
 
 import giftClosed from "../../assets/images/gift-closed.png";
 import giftOpen from "../../assets/images/gift-open.png";
-// import finalVideo from "../../assets/videos/final-surprise.mp4";
+import video from "../../assets/videos/surprise.mp4";
 
 function FinalSurprise() {
   const [opened, setOpened] = useState(false);
@@ -181,10 +181,10 @@ function FinalSurprise() {
               }}
               onEnded={() => setShowMessage(true)}
             >
-              {/* <source
-                src={finalVideo}
+              <source
+                src={video}
                 type="video/mp4"
-              /> */}
+              />
               Your browser does not support the video tag.
             </motion.video>
 

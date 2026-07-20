@@ -31,7 +31,7 @@ function About() {
     {
       icon: <FaPrayingHands />,
       title: "Faith Filled",
-      text: "Your trust in God inspires many.",
+      text: "I love the way you love God.",
     },
     {
       icon: <FaGift />,
