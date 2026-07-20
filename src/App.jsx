@@ -2,11 +2,11 @@ import { useState } from "react";
 
 import "./App.css";
 
-import Intro from "./components/Intro/Intro";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Letters from "./components/Letters/Letters";
+import Intro from "./Components/Intro/Intro";
+import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
+import About from "./Components/About/About";
+import Letters from "./Components/Letters/Letters";
 import MemoryGallery from "./Components/MemoryGallery/MemoryGallery";
 import FinalSurprise from "./Components/FinalSurprise/FinalSurprise";
 import BackToTop from "./Components/BackToTop/BackToTop";
